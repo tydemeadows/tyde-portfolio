@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+/* Marquee keyframes */
+@keyframes marquee-left {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+@keyframes marquee-right {
+  from { transform: translateX(-50%); }
+  to   { transform: translateX(0); }
+}
+
+.animate-marquee-left       { animation: marquee-left  32s linear infinite; }
+.animate-marquee-right      { animation: marquee-right 40s linear infinite; }
+.animate-marquee-left-slow  { animation: marquee-left  50s linear infinite; }
+
+/* Font family utilities */
+.font-serif { font-family: 'Instrument Serif', Georgia, serif; }
+.font-sans  { font-family: 'Outfit', system-ui, sans-serif; }
+.font-mono  { font-family: 'DM Mono', 'Courier New', monospace; }
+
+body { font-family: 'Outfit', system-ui, sans-serif; }
